@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Finds | Daily Deals</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #e60023; /* Pinterest Red */
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #ff9900; /* Amazon Orange */
+            color: #000;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .buy-button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Trending Finds</h1>
+    <p>The best products curated just for you.</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="product-card">
+            <img src="YOUR_IMAGE_LINK_HERE" alt="Product Name" class="product-image">
+            <div class="product-title">Aesthetic Desk Lamp</div>
+            <a href="YOUR_AMAZON_AFFILIATE_LINK" class="buy-button" target="_blank" rel="sponsored noopener">Check Price on Amazon</a>
+        </div>
+
+        <div class="product-card">
+            <img src="YOUR_IMAGE_LINK_HERE" alt="Product Name" class="product-image">
+            <div class="product-title">Minimalist Organizer</div>
+            <a href="YOUR_AMAZON_AFFILIATE_LINK" class="buy-button" target="_blank" rel="sponsored noopener">Check Price on Amazon</a>
+        </div>
+        
+        </div>
+</div>
+
+</body>
+</html>
