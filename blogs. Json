@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "title": "Best Vitamin C Serums That Actually Work in 2026",
+    "description": "I've been obsessing over this Pinterest board for weeks and finally tested the top-rated Vitamin C serums. This one from Mamaearth transformed my skin in just 3 weeks — faded dark spots, evened my skin tone and gave me that glass-skin glow. Perfect for Indian skin types dealing with sun damage and pigmentation. Highly recommend starting with this if you're new to actives.",
+    "pinImage": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Skincare",
+    "date": "March 2026",
+    "tags": ["skincare", "vitamin c", "serum", "glow"],
+    "amazon": {
+      "productName": "Mamaearth Skin Illuminate Vitamin C Serum",
+      "productImage": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80",
+      "price": "₹599",
+      "originalPrice": "₹899",
+      "rating": "4.3",
+      "reviews": "12,483",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Summer Kurta Sets Every Indian Woman Needs Right Now",
+    "description": "Pinterest has been flooded with these gorgeous cotton kurta sets this season and I completely understand why. Lightweight, breathable and absolutely stunning — this Libas set comes in 12 colours and works for both casual outings and office days. The fabric quality is exceptional for the price and it washes beautifully without colour fading.",
+    "pinImage": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Fashion",
+    "date": "March 2026",
+    "tags": ["fashion", "kurta", "summer", "ethnic wear"],
+    "amazon": {
+      "productName": "Libas Women Cotton Kurta Set",
+      "productImage": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&q=80",
+      "price": "₹1,299",
+      "originalPrice": "₹2,499",
+      "rating": "4.1",
+      "reviews": "8,921",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  },
+  {
+    "id": 3,
+    "title": "The Lipstick Shade Pinterest Can't Stop Pinning",
+    "description": "This mauve-nude shade from Lakme has been repinned over 200k times on Pinterest and for good reason — it flatters literally every Indian skin tone from wheatish to deep. Long-lasting formula that doesn't dry out your lips, doesn't transfer, and looks expensive. I wear this to everything from morning meetings to evening parties.",
+    "pinImage": "https://images.unsplash.com/photo-1586495777744-4e6232bf2216?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Makeup",
+    "date": "Feb 2026",
+    "tags": ["makeup", "lipstick", "lakme", "nude"],
+    "amazon": {
+      "productName": "Lakme 9 to 5 Weightless Matte Mousse Lip Color",
+      "productImage": "https://images.unsplash.com/photo-1598452963314-b09f397a5c48?w=400&q=80",
+      "price": "₹349",
+      "originalPrice": "₹450",
+      "rating": "4.4",
+      "reviews": "31,205",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Hair Oiling Is Back — The Best Oils From Pinterest",
+    "description": "The hair oiling trend has completely taken over my Pinterest feed and honestly, I'm here for it. This Indulekha Bringha oil has been used by my grandmother and now it's trending globally. It genuinely reduces hair fall — I noticed a difference in just 6 weeks of consistent use twice a week. The self-comb applicator makes it mess-free to apply.",
+    "pinImage": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Haircare",
+    "date": "Feb 2026",
+    "tags": ["haircare", "hair oil", "hair fall", "ayurvedic"],
+    "amazon": {
+      "productName": "Indulekha Bringha Hair Oil Self Applicator",
+      "productImage": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&q=80",
+      "price": "₹428",
+      "originalPrice": "₹599",
+      "rating": "4.2",
+      "reviews": "54,780",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Minimalist Gold Jewellery Pinterest Trends for 2026",
+    "description": "Dainty layered gold jewellery is dominating every Pinterest fashion board this year. This Zaveri Pearls set gives you that exact curated, minimalist look without spending a fortune. The gold finish is tarnish-resistant and looks real. I get compliments every single time I wear this layered neck set.",
+    "pinImage": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Accessories",
+    "date": "Jan 2026",
+    "tags": ["jewellery", "gold", "accessories", "minimalist"],
+    "amazon": {
+      "productName": "Zaveri Pearls Gold Tone Layered Necklace Set",
+      "productImage": "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=400&q=80",
+      "price": "₹499",
+      "originalPrice": "₹999",
+      "rating": "4.0",
+      "reviews": "7,342",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  },
+  {
+    "id": 6,
+    "title": "The Sunscreen Every Pinterest Skincare Board Recommends",
+    "description": "No more white cast, no more greasy feel — this Dot & Key sunscreen is the one that finally converted me into a daily SPF user. It sits under makeup beautifully, controls oil for 6+ hours and actually protects against UVA/UVB. It's all over Pinterest skincare boards and it absolutely deserves the hype. Non-negotiable for Indian summers.",
+    "pinImage": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80",
+    "pinterestUrl": "https://www.pinterest.com",
+    "category": "Skincare",
+    "date": "Jan 2026",
+    "tags": ["sunscreen", "spf", "skincare", "summer"],
+    "amazon": {
+      "productName": "Dot & Key Waterlight Gel Sunscreen SPF 50",
+      "productImage": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80",
+      "price": "₹395",
+      "originalPrice": "₹595",
+      "rating": "4.3",
+      "reviews": "19,847",
+      "affiliateUrl": "https://amzn.to/REPLACE-WITH-YOUR-LINK"
+    }
+  }
+]
