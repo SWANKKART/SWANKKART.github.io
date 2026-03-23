@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rosemary – Health & Beauty | SWANKKART</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --green:      #1c3a2a;
+      --green-mid:  #2e5c40;
+      --green-lite: #5a9e72;
+      --pale:       #e8f0e8;
+      --cream:      #f8f4ed;
+      --gold:       #c8963c;
+      --gold-light: #f3d179;
+      --text:       #2a2a2a;
+      --muted:      #5a6a5a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Lora', Georgia, serif;
+      line-height: 1.85;
+    }
+
+    /* ── TOP NAV ─────────────────────────────── */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 40px;
+      background: rgba(28, 58, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(200,150,60,0.3);
+    }
+
+    /* SWANKKART — bold black Mahendra-GD style on cream pill */
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: #000;
+      text-decoration: none;
+      font-family: 'Georgia', serif;
+      text-transform: uppercase;
+      background: #f0e8d0;
+      padding: 5px 18px 6px;
+      border-radius: 4px;
+      border: 2px solid var(--gold);
+      line-height: 1;
+      display: inline-block;
+    }
+
+    .brand .kart { color: #1c3a2a; }
+
+    .topbar-tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      font-family: 'Lora', serif;
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 110px 24px 80px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1515586000433-45406d8e6662?w=1600&q=85') center/cover no-repeat;
+      filter: brightness(0.2) saturate(1.5);
+      z-index: 0;
+    }
+
+    /* Rosemary sprig watermark — visible in bg */
+    .hero-watermark {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=900&q=60') center/cover no-repeat;
+      opacity: 0.08;
+      z-index: 1;
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(28,58,42,0.65) 0%, rgba(8,18,12,0.88) 100%);
+      z-index: 2;
+    }
+
+    .hero-content { position: relative; z-index: 3; max-width: 760px; }
+
+    .hero-pill {
+      display: inline-block;
+      border: 1px solid rgba(200,150,60,0.55);
+      color: var(--gold-light);
+      font-size: 0.67rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 100px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.4rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 em { font-style: italic; color: #9dd4a2; }
+
+    .hero p {
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      color: rgba(255,255,255,0.7);
+      max-width: 540px;
+      margin: 0 auto;
+      font-style: italic;
+    }
+
+    /* ── PAGE WRAPPER ─────────────────────────── */
+    .page { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+    section { padding: 52px 0; border-bottom: 1px solid rgba(90,158,114,0.18); }
+    section:last-of-type { border-bottom: none; }
+
+    .sec-label {
+      display: inline-block;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--green-lite);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.55rem, 3.5vw, 2.1rem);
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .rule { width: 38px; height: 3px; background: var(--gold); border-radius: 2px; margin: 10px 0 22px; }
+
+    /* ── ABOUT ────────────────────────────────── */
+    .intro-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .intro-block img {
+      width: 100%; height: 290px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 6px 10px 28px rgba(28,58,42,0.18);
+    }
+
+    .intro-block p { font-size: 0.95rem; margin-bottom: 13px; }
+    .intro-block p:last-child { margin: 0; }
+
+    /* ── BENEFIT ROWS ─────────────────────────── */
+    .benefit-row {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px 18px;
+      margin-bottom: 26px;
+      align-items: start;
+    }
+
+    .b-icon {
+      width: 42px; height: 42px;
+      background: var(--green);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .b-text h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 3px;
+    }
+
+    .b-text p { font-size: 0.88rem; line-height: 1.75; }
+
+    .benefits-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 38px;
+    }
+
+    /* ── OIL BANNER ───────────────────────────── */
+    .oil-banner {
+      background: var(--green);
+      border-radius: 10px;
+      padding: 36px 38px;
+      color: #fff;
+      margin: 52px 0;
+    }
+
+    .oil-banner h2 { color: #fff; }
+    .oil-banner .sec-label { color: var(--pale); }
+    .oil-banner .rule { background: var(--gold); }
+    .oil-banner p { font-size: 0.91rem; color: rgba(255,255,255,0.78); margin-bottom: 11px; }
+
+    .oil-uses {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .oil-use {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.11);
+      border-radius: 8px;
+      padding: 16px 14px;
+    }
+
+    .oil-use h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.93rem;
+      color: var(--gold-light);
+      margin-bottom: 5px;
+    }
+
+    .oil-use p { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.65; }
+
+    /* ── AMAZON BUTTON — MID PAGE ─────────────── */
+    .shop-band {
+      background: linear-gradient(135deg, #1c3a2a 0%, #2e5c40 100%);
+      border-radius: 10px;
+      padding: 38px 32px;
+      text-align: center;
+      margin: 52px 0;
+    }
+
+    .shop-band h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: #fff;
+      margin-bottom: 7px;
+    }
+
+    .shop-band p { font-size: 0.86rem; color: rgba(255,255,255,0.62); margin-bottom: 22px; }
+
+    .amazon-buy-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #f8e6b8 0%, #f3d179 100%);
+      color: #111;
+      padding: 14px 36px;
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid #a88734;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.22);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .amazon-buy-btn:hover {
+      background: linear-gradient(to bottom, #f5d78e 0%, #eeb933 100%);
+      border-color: #9c7e31;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+      transform: translateY(-2px);
+    }
+
+    .amazon-buy-btn:active { background: #eeb933; transform: translateY(1px); }
+    .amazon-buy-btn .icon { margin-right: 10px; font-size: 1.1rem; }
+    .aff-note { margin-top: 11px; font-size: 0.68rem; color: rgba(255,255,255,0.38); }
+
+    /* ── DISCLAIMER ───────────────────────────── */
+    .disclaimer {
+      background: #fffbe8;
+      border-left: 4px solid var(--gold);
+      padding: 15px 20px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.78rem;
+      color: #5a4a1a;
+      margin: 30px 0 0;
+    }
+
+    .disclaimer strong { display: block; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.07em; font-size: 0.73rem; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--green);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 22px;
+      font-size: 0.7rem;
+      letter-spacing: 0.07em;
+    }
+
+    footer span { color: #9dd4a2; }
+
+    /* ── RESPONSIVE ───────────────────────────── */
+    @media (max-width: 680px) {
+      .topbar { padding: 12px 18px; }
+      .intro-block, .benefits-2col { grid-template-columns: 1fr; }
+      .oil-uses { grid-template-columns: 1fr; }
+      .oil-banner, .shop-band { padding: 26px 18px; }
+    }
+
+    /* fade in */
+    .fade { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade.show { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="topbar">
+    <a class="brand" href="#">SWANK<span class="kart">KART</span></a>
+    <span class="topbar-tag">Wellness &amp; Beauty</span>
+  </nav>
+
+  <!-- HERO — rosemary image in background -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-watermark"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-pill">Health &amp; Beauty Guide</div>
+      <h1>The Power of <em>Rosemary</em><br>for Health &amp; Beauty</h1>
+      <p>Ancient wisdom meets modern science — discover how this fragrant herb transforms your body, skin, and hair.</p>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- ABOUT -->
+    <section class="fade">
+      <span class="sec-label">About the Herb</span>
+      <h2>What Makes Rosemary Special?</h2>
+      <div class="rule"></div>
+      <div class="intro-block">
+        <div>
+          <p>Rosemary (<em>Salvia rosmarinus</em>) is a hardy, aromatic evergreen shrub native to the Mediterranean coast, used for over 5,000 years by Greek scholars, Roman physicians, and Ayurvedic healers — not merely as a kitchen herb, but as a potent botanical medicine with a remarkable range of effects on the human body.</p>
+          <p>The plant's power lies in its dense concentration of bioactive compounds: rosmarinic acid, carnosic acid, ursolic acid, and volatile essential oils including 1,8-cineole, camphor, and borneol. These molecules work synergistically to deliver antioxidant, anti-inflammatory, antimicrobial, and circulatory benefits that modern clinical research continues to validate.</p>
+        </div>
+        <img src="https://www.shutterstock.com/image-photo/green-fresh-rosemary-twig-flowers-260nw-2581389007.jpg" alt="Fresh rosemary sprigs"/>
+      </div>
+    </section>
+
+    <!-- HEALTH BENEFITS -->
+    <section class="fade">
+      <span class="sec-label">Science-Backed</span>
+      <h2>Health Benefits of Rosemary</h2>
+      <div class="rule"></div>
+
+      <div class="benefits-2col">
+        <div>
+          <div class="benefit-row">
+            <div class="b-icon">🧠</div>
+            <div class="b-text">
+              <h3>Memory &amp; Brain Function</h3>
+              <p>The compound 1,8-cineole inhibits acetylcholinesterase — the enzyme that degrades the memory neurotransmitter acetylcholine. Studies show rosemary aroma improves mental speed and accuracy by up to 15%, making it a natural cognitive enhancer.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">🔥</div>
+            <div class="b-text">
+              <h3>Anti-Inflammatory</h3>
+              <p>Carnosol and rosmarinic acid inhibit inflammatory enzymes COX-1 and COX-2 at a molecular level, reducing chronic inflammation linked to arthritis, muscle soreness, and metabolic conditions — without gastrointestinal side effects of synthetic NSAIDs.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">🫀</div>
+            <div class="b-text">
+              <h3>Circulation &amp; Heart Health</h3>
+              <p>Rosemary acts as a natural vasodilator, relaxing blood vessel walls and improving peripheral circulation. Regular use helps reduce blood pressure, supports tissue oxygenation, and lowers cardiovascular risk through its antiplatelet and antioxidant activity.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="benefit-row">
+            <div class="b-icon">🛡️</div>
+            <div class="b-text">
+              <h3>Antioxidant Protection</h3>
+              <p>With one of the highest ORAC values of any herb, rosemary neutralises free radicals that damage DNA and accelerate cellular ageing. Carnosic acid uniquely crosses the blood-brain barrier to protect neural tissue from oxidative stress.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">😌</div>
+            <div class="b-text">
+              <h3>Stress &amp; Cortisol Reduction</h3>
+              <p>Clinical trials using salivary cortisol measurements confirm that inhaling rosemary essential oil significantly reduces cortisol levels. It modulates the limbic system's anxiety response, promoting a calm-alert mental state suited for focused work.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">🌿</div>
+            <div class="b-text">
+              <h3>Digestive &amp; Liver Support</h3>
+              <p>Rosemary stimulates bile production, improving fat digestion and nutrient absorption. Its antispasmodic properties ease bloating and cramping, while hepatoprotective compounds shield the liver from oxidative and toxin-induced damage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROSEMARY OIL -->
+    <div class="oil-banner fade">
+      <span class="sec-label">Essential Oil Focus</span>
+      <h2>The Power of Rosemary Oil</h2>
+      <div class="rule"></div>
+      <p>Steam-distilled rosemary essential oil is a concentrated source of the herb's actives — delivering therapeutic-level concentrations of 1,8-cineole (up to 45%), camphor, and alpha-pinene. Diluted at 2–3% in a carrier oil such as jojoba, argan, or coconut oil, it is safe for skin and scalp use and has been shown in peer-reviewed trials to match the efficacy of pharmaceutical hair-loss treatments.</p>
+      <div class="oil-uses">
+        <div class="oil-use">
+          <h4>🌬️ Aromatherapy</h4>
+          <p>Diffuse 5–6 drops for 20–30 mins to sharpen focus and reduce anxiety. Blend with eucalyptus for powerful respiratory support.</p>
+        </div>
+        <div class="oil-use">
+          <h4>💆 Scalp Massage</h4>
+          <p>Mix 4 drops in 1 tbsp carrier oil. Massage into scalp for 5 mins, 3× weekly, leave 30 mins before washing. Results visible in 3–6 months.</p>
+        </div>
+        <div class="oil-use">
+          <h4>🧴 Skin &amp; Face</h4>
+          <p>Add 2–3 drops to your moisturiser or face oil. Use nightly to reduce inflammation, support collagen, and combat photoageing.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMAZON — MID PAGE -->
+    <div class="shop-band fade">
+      <h3>🛒 Shop Premium Rosemary Products</h3>
+      <p>High-quality rosemary essential oils, hair serums, supplements &amp; teas — curated on Amazon.</p>
+      <a id="dynamic-amazon-btn" class="amazon-buy-btn" target="_blank" rel="noopener noreferrer sponsored">
+        <span class="icon">🛒</span> View on Amazon
+      </a>
+      <p class="aff-note">Affiliate link — we may earn a small commission at no extra cost to you.</p>
+    </div>
+
+    <!-- BEAUTY BENEFITS -->
+    <section class="fade">
+      <span class="sec-label">Skin &amp; Hair</span>
+      <h2>Beauty Benefits of Rosemary</h2>
+      <div class="rule"></div>
+
+      <div class="benefits-2col">
+        <div>
+          <div class="benefit-row">
+            <div class="b-icon">🌱</div>
+            <div class="b-text">
+              <h3>Hair Regrowth &amp; Thickness</h3>
+              <p>A landmark 2015 randomised trial found rosemary oil as effective as minoxidil 2% for androgenetic alopecia, with less scalp irritation. It stimulates dermal papilla cells, extending the hair growth phase for visibly denser, thicker hair.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">⏳</div>
+            <div class="b-text">
+              <h3>Anti-Ageing &amp; Collagen</h3>
+              <p>Ursolic acid activates collagen-producing fibroblasts and inhibits enzymes that degrade skin structure, visibly reducing fine lines and improving elasticity. Its polyphenols also provide photoprotection against UV-induced premature ageing.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">✨</div>
+            <div class="b-text">
+              <h3>Brightening &amp; Dark Spots</h3>
+              <p>Rosemary inhibits tyrosinase — the enzyme driving melanin overproduction — making it a gentle, non-irritating alternative to hydroquinone for fading hyperpigmentation, sun spots, and post-acne marks.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="benefit-row">
+            <div class="b-icon">💧</div>
+            <div class="b-text">
+              <h3>Acne &amp; Pore Control</h3>
+              <p>Rosemary shows potent antibacterial activity against <em>C. acnes</em>, the bacteria behind inflammatory breakouts. Unlike harsh chemical treatments, it regulates sebum and reduces redness without disrupting the skin's microbiome or moisture barrier.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">🌊</div>
+            <div class="b-text">
+              <h3>Scalp Health &amp; Dandruff</h3>
+              <p>Antifungal terpenes in rosemary disrupt the cell membrane of <em>Malassezia globosa</em> — the fungus behind dandruff and seborrheic dermatitis. Regular rinse use reduces flaking, inflammation, and excess scalp oil production.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <div class="b-icon">🌸</div>
+            <div class="b-text">
+              <h3>Skin Barrier &amp; Hydration</h3>
+              <p>Rosemary hydrosol used as a toner fortifies the skin's lipid barrier, reducing transepidermal water loss and improving all-day hydration. It adds natural luminosity without clogging pores, suited to all skin types.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <strong>⚕️ Medical &amp; Cosmetic Disclaimer</strong>
+        This article is for informational purposes only and does not constitute medical or dermatological advice. Results vary between individuals. Always perform a patch test before applying new topical ingredients. Consult a qualified healthcare professional before using rosemary supplements, especially if pregnant, nursing, or on medication.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <span>SWANKKART</span> · Wellness &amp; Beauty Guide · For informational purposes only</p>
+  </footer>
+
+  <script>
+    const myAffiliateLink = "https://amzn.to/4spRz1V";
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("dynamic-amazon-btn");
+      if (btn) btn.href = myAffiliateLink;
+    });
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
