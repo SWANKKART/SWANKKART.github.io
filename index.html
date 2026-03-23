@@ -740,6 +740,15 @@
 
   /* ── Init ─────────────────────────────────── */
   loadBlogs();
+  
+  <script>
+    const myAffiliateLink = "https://amzn.to/4spRz1V";
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("dynamic-amazon-btn");
+      if (btn) btn.href = myAffiliateLink;
+    });
+  </script>
+
 </script>
 </body>
 </html>
